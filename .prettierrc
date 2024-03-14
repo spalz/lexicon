@@ -1,0 +1,14 @@
+{
+    "singleQuote": false,
+    "tabWidth": 4,
+    "endOfLine": "lf",
+    "semi": true,
+    "overrides": [
+        {
+            "files": ["src/data/words/*.ts", "src/styles/*.ts"],
+            "options": {
+                "printWidth": 800
+            }
+        }
+    ]
+}
