@@ -6,7 +6,7 @@ declare type Url = string | UrlObject;
 import { Link } from "@components/elements";
 import { colors, spacings, fonts } from "@styles/vars";
 import { down } from "@config/breakpoints_vars";
-import { MAIN_R, WORDS_R, VERBS_R } from "@utils/routes";
+import { MAIN_R, WORDS_R, VERBS_R, VERBS_BOOK_R } from "@utils/routes";
 
 interface HeaderMenuItemProps {
     title: string;
@@ -32,6 +32,10 @@ let HeaderMenu: React.FC<HeaderMenuProps> = ({ type }) => {
         <SHeaderMenu className={type}>
             {/* <HeaderMenuItem href={MAIN_R()} title={"Quiz"} /> */}
             <HeaderMenuItem href={VERBS_R()} title={"Irregular verbs"} />
+            <HeaderMenuItem
+                href={VERBS_BOOK_R()}
+                title={"Irregular verbs book"}
+            />
             {/* <HeaderMenuItem href={WORDS_R()} title={"Words"} /> */}
         </SHeaderMenu>
     );
